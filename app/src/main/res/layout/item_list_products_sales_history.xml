@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="25dp">
+
+    <LinearLayout
+        android:id="@+id/history_product_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#DFDFDF">
+
+        <TextView
+            android:id="@+id/history_product_name_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:layout_marginStart="4dp"
+            android:autoSizeTextType="uniform"
+            tools:text="Coffee 3/1"/>
+
+        <TextView
+            android:id="@+id/history_product_quantity_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight=".15"
+            android:textColor="#2B2B2B"
+            android:gravity="center"
+            android:textSize="18sp"
+            tools:text="999"/>
+
+        <TextView
+            android:id="@+id/history_product_price_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".19"
+            android:gravity="center"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            android:autoSizeTextType="uniform"
+            tools:text="14,000" />
+
+        <TextView
+            android:id="@+id/history_product_total_price_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".26"
+            android:gravity="end"
+            android:autoSizeTextType="uniform"
+            android:textColor="#2B2B2B"
+            android:textSize="18sp"
+            tools:text="52,000"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GuruDistr</string>
+
+    <string-array name="sellsHistoryListModes">
+        <item>Last sale</item>
+        <item>Last week</item>
+        <item>Last month</item>
+        <item>All sales</item>
+    </string-array>
+</resources>

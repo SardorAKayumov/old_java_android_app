@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="55dp">
+
+    <TextView
+        android:id="@+id/territoryNameItem"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="sans-serif"
+        android:layout_margin="8sp"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:gravity="center_vertical"
+        app:autoSizeTextType="uniform"
+        tools:text = "Keles"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

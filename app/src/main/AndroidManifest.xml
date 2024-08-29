@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeroteam.gurudistr">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GuruDistr"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".OneSelling"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="Instantiatable,LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zeroteam.gurudistr.OneSelling" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
+        <activity
+            android:name=".StoresList"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable,LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zeroteam.gurudistr.StoresList" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TerritoriesList"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable,LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zeroteam.gurudistr.TerritoriesList" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sections"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable,LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zeroteam.gurudistr.Sections" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogIn"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="Instantiatable,LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.zeroteam.gurudistr.LogIn" />
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="Instantiatable,LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

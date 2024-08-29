@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateOneSelling"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        tools:text="24.01.2003"
+        android:textSize="20sp"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/dateOneSelling"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsLayout"
+        android:layout_below="@+id/line1"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/debt_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_stroke_red"
+            android:fontFamily="@font/baloo"
+            android:text="debt"
+            android:textAllCaps="false"
+            android:textColor="#B84040"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/paid_btn"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/style_stroke_green"
+            android:fontFamily="@font/baloo"
+            android:text="paid"
+            android:textAllCaps="false"
+            android:textColor="#428F57"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/totalPriceOneSelling"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_trade_list"
+        android:layout_below="@id/line2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalPriceOneSelling"
+        android:layout_below="@+id/btnsLayout"
+        tools:text="20,000"
+        android:textSize="20sp"
+        android:textColor="#2B2B2B"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"/>
+
+
+    <TextView
+        android:id="@+id/empty_view_trade_product"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:text="No products yet!"/>
+
+    <View
+        android:id="@+id/fog_trades_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80D4D4D4" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar_trades_list"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        style="@style/Widget.AppCompat.ProgressBar"/>
+
+</RelativeLayout>
